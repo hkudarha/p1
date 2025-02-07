@@ -22,6 +22,53 @@ export default function Home() {
             </div>   
             <FeatureCards/> 
             <CategoryList/>      
+
+            <div className=" mt-10  mb-10 flex flex-col md:flex-row gap-6 p-6 justify-center">
+                {/* Left Card */}
+                <div
+                    className="relative w-full md:w-1/2 h-80 bg-cover bg-center rounded-2xl flex items-center justify-center p-6 text-white shadow-lg"
+                    style={{ backgroundImage: "url('https://i.pinimg.com/736x/f8/29/47/f829470fab972a74d2d0cb6a18b2bb1a.jpg')" }}
+                >
+                    <div className=" p-4 rounded-lg text-start">
+                    <h2 className="text-2xl font-bold">20% Off On Laptops</h2>
+                    <p className="mt-2">Products On Sale For Limited Time Only.</p>
+                    <button className="bg-white uppercase text-black px-5 py-2 rounded-full mt-5 text-sm  hover:bg-gray-300 transition">Shop it now</button>
+                    </div>
+                </div>
+                
+                {/* Right Card */}
+                <div
+                    className="relative w-full md:w-1/2 h-80 bg-cover bg-center rounded-2xl flex items-center justify-center p-6 text-white shadow-lg"
+                    style={{ backgroundImage: "url('https://i.pinimg.com/736x/10/f2/59/10f259d86d58999d8dc2c0e19473d3e1.jpg')" }}
+                >
+                    <div className="  p-4 rounded-lg text-start">
+                    <h2 className="text-2xl font-bold">Apple Collection</h2>
+                    <p className="mt-2">Get Your Best Apple Products.</p>
+                    <button className="bg-white uppercase text-black px-5 py-2 rounded-full mt-5 text-sm  hover:bg-gray-300 transition">Shop Collection</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            {/* Subscribe us Now */}
+            <div
+                className="rounded-xl relative w-full h-96 bg-cover bg-center flex flex-col items-center justify-center text-white p-6"
+                style={{ backgroundImage: "url('https://i.pinimg.com/736x/42/f5/39/42f539e4ed97299ec3b7ef61f3bee090.jpg')" }}
+                >
+                <div className=" p-6 rounded-lg text-center">
+                    <h3 className="text-2xl font-bold">Subscribe Us Now</h3>
+                    <p className="mt-2">Get Latest News, Updates And Deals Directly Mailed To Your Inbox.</p>
+                    <div className="mt-4 flex items-center  rounded-md overflow-hidden">
+                        <input
+                            type="email"
+                            placeholder="Your email address here"
+                            className="w-64 ml-10 p-2 text-black focus:outline-none"
+                        />
+                        <button className="bg-[#fd8500] text-white px-4 py-2 uppercase">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
