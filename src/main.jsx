@@ -5,8 +5,8 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Components/Home/Home.jsx'
 import Layout from './Layout.jsx'
+import Shop from './Components/Shop/Shop.jsx'
 import About from './Components/About/About.jsx'
-import Services from './Components/Services/Services.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 
 const router =createBrowserRouter([
@@ -23,8 +23,8 @@ const router =createBrowserRouter([
         element:<About/>
       },
       {
-        path:'services',
-        element: <Services/>
+        path:'shop',
+        element: <Shop/>
       },
       {
         path:'contact',
