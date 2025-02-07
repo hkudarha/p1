@@ -8,7 +8,7 @@ export default function Home() {
         <div className="">
             <div
             className="relative bg-cover bg-center h-[90vh] flex items-center rounded-xl"
-            style={{ backgroundImage: "url('../public/images/home01.jpeg')" }}
+            style={{ backgroundImage: "url('https://i.pinimg.com/736x/5d/c0/d2/5dc0d2dec85b7369fde3c510901ed603.jpg')" }}
             >
                 <div className="max-w-md ml-10 text-white text-start">
                     <h1 className="text-4xl font-bold mb-2">Iphone 15 Series</h1>
