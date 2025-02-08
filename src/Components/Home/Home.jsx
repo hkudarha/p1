@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import FeatureCards from "../FeatureCards/FeatureCards";
 import CategoryList from "../Category/CategoryList";
 import SubscribeUs from "../SubscribeUs/SubscribeUs";
+import CustomerReview from "../CustomerReview/CustomerReview";
 export default function Home() {
     return (
         <div className="">
@@ -50,10 +51,12 @@ export default function Home() {
                 </div>
             </div>
 
+            <CustomerReview/>
 
 
             {/* Subscribe us Now */}
             <SubscribeUs/>
+
         </div>
     );
 }

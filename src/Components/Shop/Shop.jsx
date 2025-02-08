@@ -1,5 +1,6 @@
 import React from "react"
 import SubscribeUs from "../SubscribeUs/SubscribeUs"
+import CustomerReview from "../CustomerReview/CustomerReview"
 
  function Shop() {
     return(
@@ -14,7 +15,9 @@ import SubscribeUs from "../SubscribeUs/SubscribeUs"
                 </div>             
             </div>
 
-            {/* <SubscribeUs/> */}
+            <CustomerReview/>
+
+            <SubscribeUs/>
            
         </div>
         

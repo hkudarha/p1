@@ -19,7 +19,7 @@ export default function Footer() {
                             <FaWhatsapp className="text-[#fd8500] text-2xl" />
                         </div>
                     </div>
-                        <div className="text-start">
+                        <div className="text-start mb-5">
                             <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">Quick Links</h2>
                             <ul className="uppercase text-sm">
                                 <li>
@@ -44,7 +44,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="text-start">
+                        <div className="text-start mb-5">
                             <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">Help & Info</h2>
                             <ul className="uppercase text-sm">
                                 <li>
@@ -74,7 +74,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="text-start text-sm">
+                        <div className="text-start text-sm mb-5">
                             <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">Contact Us</h2>
                             <p>Do you have any Queries or <br/> suggestions?</p>
                             <Link to="mailto:yourinfo@gmail.com"className="underline">

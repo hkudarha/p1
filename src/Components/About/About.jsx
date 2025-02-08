@@ -3,10 +3,12 @@ import './About.css'
 import {Link,NavLink} from 'react-router-dom'
 import FeatureCards from "../FeatureCards/FeatureCards"
 import SubscribeUs from "../SubscribeUs/SubscribeUs"
+import CustomerReview from "../CustomerReview/CustomerReview"
 
  function About() {
     return (
         <div>
+            {/* banner image  */}
             <div
             className="relative bg-cover bg-center h-[40vh] flex items-center  justify-center rounded-xl "
             style={{ backgroundImage: "url('https://i.pinimg.com/736x/72/65/0b/72650bd4c3bb1aaa061053d5a3684531.jpg')" }}
@@ -15,10 +17,10 @@ import SubscribeUs from "../SubscribeUs/SubscribeUs"
                     <h1 className="text-4xl font-bold mb-2 text-white ">About Us</h1>  
                     <p className="text-white">Home &gt; <span className="underline">About Us</span> </p>
                 </div>             
-            </div>  
-            <FeatureCards/>   
-            <SubscribeUs/>  
+            </div>
 
+            <FeatureCards/>   
+             
             <div className="flex flex-col md:flex-row items-center justify-center p-6 gap-6">
                 {/* Left Side - Video */}
                 <div className="w-full md:w-1/2">
@@ -38,7 +40,11 @@ import SubscribeUs from "../SubscribeUs/SubscribeUs"
                     </p>
                     <button className="bg-black uppercase mt-10 text-white px-6 py-2 rounded-full text-sm hover:bg-gray-500 transition">Go To shop</button>
                 </div>
-            </div>     
+            </div>
+
+            <CustomerReview/> 
+
+            <SubscribeUs/>     
         </div>
     )
 }
