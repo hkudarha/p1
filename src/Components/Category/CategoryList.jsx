@@ -43,7 +43,7 @@ const categories = [
 const CategoryList = () => {
   return (
     <>
-     <h1 className="mb-10 text-2xl font-bold">Our Categories</h1>
+     <h1 className="mb-10 text-2xl font-bold mt-10">Our Categories</h1>
     <div className="flex w-full  gap-4 justify-between mb-10">
        
       {categories.map((category, index) => (

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import SubscribeUs from "../SubscribeUs/SubscribeUs";
+import ShopOurInsta from "../ShopOurInsta/ShopOurInsta";
 
 
 
@@ -56,47 +57,52 @@ import SubscribeUs from "../SubscribeUs/SubscribeUs";
 
                     {/* Right Side - Contact Form */}
                     <div className="md:w-1/2 text-start bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h2 className="text-2xl font-bold mb-4">Any Questions?</h2>
-                    <p className="text-gray-700 mb-6">Feel free to ask us anything. We’d love to hear from you!</p>
+                    <h2 className="text-2xl font-bold mb-2">Any Questions?</h2>
+                    <p className="text-gray-700 mb-5">Feel free to ask us anything. We’d love to hear from you!</p>
 
-                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                    {/* Name and Email in One Line */}
+                    <div className="flex space-x-4">
                         <input
-                        type="text"
-                        placeholder="Name"
-                        {...register("name", { required: true })}
-                        className="w-full p-2 border rounded-md focus:outline-black"
+                            type="text"
+                            placeholder="Your full name*"
+                            {...register("name", { required: true })}
+                            className="w-1/2 p-2 border rounded-md focus:outline-black"
                         />
                         <input
-                        type="email"
-                        placeholder="Email"
-                        {...register("email", { required: true })}
-                        className="w-full p-2 border rounded-md focus:outline-black"
+                            type="email"
+                            placeholder="Write your email here*"
+                            {...register("email", { required: true })}
+                            className="w-1/2 p-2 border rounded-md focus:outline-black"
                         />
-                        <input
+                    </div>
+
+                    <input
                         type="tel"
-                        placeholder="Phone"
+                        placeholder="Phone number"
                         {...register("phone")}
                         className="w-full p-2 border rounded-md focus:outline-black"
-                        />
-                        <input
+                    />
+                    <input
                         type="text"
                         placeholder="Write your subject here"
                         {...register("subject", { required: true })}
                         className="w-full p-2 border rounded-md focus:outline-black"
-                        />
-                        <textarea
-                        placeholder="Write your message here"
+                    />
+                    <textarea
+                        placeholder="Write your message here*"
                         {...register("message", { required: true })}
                         className="w-full p-2 border rounded-md h-10 focus:outline-black"
-                        ></textarea>
+                    ></textarea>
 
-                        <button
+                    <button
                         type="submit"
                         className="w-full bg-black text-white py-2 rounded-md hover:bg-gray-500 transition-all"
-                        >
+                    >
                         Submit
-                        </button>
-                    </form>
+                    </button>
+                </form>
+
                     </div>
                 </div>
             </div>
@@ -146,6 +152,7 @@ import SubscribeUs from "../SubscribeUs/SubscribeUs";
 
             {/* Subscribe us Now */}
             <SubscribeUs/>
+            <ShopOurInsta/>
 
 
             {/* map  */}

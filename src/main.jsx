@@ -8,7 +8,8 @@ import Layout from './Layout.jsx'
 import Shop from './Components/Shop/Shop.jsx'
 import About from './Components/About/About.jsx'
 import Contact from './Components/Contact/Contact.jsx'
-
+import Pages from './Components/Pages/Pages.jsx'
+ 
 const router =createBrowserRouter([
   {
     path:'/',
@@ -27,6 +28,10 @@ const router =createBrowserRouter([
         element: <Shop/>
       },
       {
+        path:'pages',
+        element:<Pages/>
+      },
+      {
         path:'contact',
         element:<Contact/>
       }
@@ -37,6 +42,7 @@ const router =createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    
    <RouterProvider router={router}/>
   </React.StrictMode>,
 )

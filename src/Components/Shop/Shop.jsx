@@ -1,6 +1,7 @@
 import React from "react"
 import SubscribeUs from "../SubscribeUs/SubscribeUs"
 import CustomerReview from "../CustomerReview/CustomerReview"
+import ShopOurInsta from "../ShopOurInsta/ShopOurInsta"
 
  function Shop() {
     return(
@@ -18,7 +19,7 @@ import CustomerReview from "../CustomerReview/CustomerReview"
             <CustomerReview/>
 
             <SubscribeUs/>
-           
+           <ShopOurInsta/>
         </div>
         
     )

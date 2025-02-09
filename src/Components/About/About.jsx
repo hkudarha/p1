@@ -1,9 +1,9 @@
 import React from "react"
-import './About.css'
 import {Link,NavLink} from 'react-router-dom'
 import FeatureCards from "../FeatureCards/FeatureCards"
 import SubscribeUs from "../SubscribeUs/SubscribeUs"
 import CustomerReview from "../CustomerReview/CustomerReview"
+import ShopOurInsta from "../ShopOurInsta/ShopOurInsta"
 
  function About() {
     return (
@@ -44,7 +44,8 @@ import CustomerReview from "../CustomerReview/CustomerReview"
 
             <CustomerReview/> 
 
-            <SubscribeUs/>     
+            <SubscribeUs/> 
+            <ShopOurInsta/>    
         </div>
     )
 }
